@@ -18,7 +18,9 @@ function SignUp() {
         event.preventDefault();
         console.log(form)
 
-        await axios.post("http://localhost:9000/user/signup", form)
+        const updatedform = { ...form, role:"owner" }
+
+        await axios.post("http://localhost:9000/user/signup", updatedform)
             .then((response) => {
                 console.log(response.data);
                 navigate("/PumpRegister");
