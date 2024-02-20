@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from 'axios';
 //forhandler
 
 function PumpRegister() {
+    const params = useParams();
+    const userId = params.userid;
+
+    console.log("params", params)
+    console.log("userid", userId)
     const [form, setForm] = useState({})
     const onChangeHandler = (event) => {
         setForm({
@@ -19,12 +24,19 @@ function PumpRegister() {
         event.preventDefault();
         console.log(form)
 
-        await axios.post("http://localhost:9000/pump/createpump", form)
-            .then((response) => {
-                console.log(response.data);
-                navigate("/SignUp");
-            })
-            .catch((err) => console.log(err)); 
+        const data = {
+            ...form,
+            userId: userId
+        }
+
+        try {
+            const response = await axios.post(`http://localhost:9000/pump/createpump`, data)
+            console.log(response)
+            navigate("/SignUp");
+        }
+        catch (err) {
+            console.log(err)
+        }
     };
     return (
         <>

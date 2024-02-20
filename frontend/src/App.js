@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/PumpRegister" element={<PumpRegister />} />
+          <Route path="/PumpRegister/:userid" element={<PumpRegister />} />
         </Routes>
       </BrowserRouter>
 
