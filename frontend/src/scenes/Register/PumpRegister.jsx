@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import axios from 'axios';
+import mainservice from '../../service/mainservice';
 //forhandler
 
 function PumpRegister() {
@@ -30,7 +31,7 @@ function PumpRegister() {
         }
 
         try {
-            const response = await axios.post(`http://localhost:9000/pump/createpump`, data)
+            const response = await mainservice.PumpRegister(data)
             console.log(response)
             navigate("/SignUp");
         }
