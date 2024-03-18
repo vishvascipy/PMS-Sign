@@ -36,7 +36,7 @@ function SignUp() {
 
     return (
         <>
-            <div className="card container mb-5">
+            <div className="p-4">
                 <div className="shadow p-4 mt-5 bg-body-tertiary rounded">
                     <form>
                         <h1 className="display-5 mb-4">User Registeration</h1>
