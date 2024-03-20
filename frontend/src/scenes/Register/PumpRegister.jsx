@@ -82,7 +82,7 @@ function PumpRegister() {
                             {/* </div> */}
                         </div>
                         <div className="d-flex justify-content-center">
-                            <button className="btn btn-primary" onClick={onSubmitHandler}>Submit</button>
+                            <button className="btn btn-success" onClick={onSubmitHandler}>Submit</button>
                             <br />
                         </div>
                     </form>
