@@ -8,6 +8,7 @@ import Home from "./scenes/Home/Home";
 import Webhome from "./scenes/components/Webhome/Webhome";
 import Navbar from "./scenes/components/Navbar/Navbar";
 import ContactUs from "./scenes/components/ContactUs/ContactUs";
+import Features from "./scenes/components/Features/Features";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
 
           <Route path="/Home" element={<WithNavbar><Webhome /></WithNavbar>} />
+          <Route path="/Features" element={<WithNavbar><Features /></WithNavbar>} />
           <Route path="/ContactUs" element={<WithNavbar><ContactUs /></WithNavbar>} />
         </Routes>
       </BrowserRouter>
