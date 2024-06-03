@@ -1,10 +1,12 @@
 import React from 'react'
-import "./Features.css"
-import Feature from "../assests/Features 1.png"
-import Bottom from "../assests/Untitled-23 1.png"
-import Image from "../assests/Rectangle 3.png"
+import "./AboutUs.css"
+import About from "../assests/AboutUs.png"
+import Bottom from "../assests/Indhan.png"
+import Image from "../assests/AboutBack.png"
+import Logo from "../assests/IndhanLogocopy1.png"
 import { useState } from 'react'
-function Features() {
+
+function AboutUs() {
     const [fulltext, setFulltext] = useState(false)
 
     const toggletext = () => {
@@ -13,7 +15,7 @@ function Features() {
     return (
         <div className='featuremain'>
             <div className='background'>
-                <div className='img'><img src={Feature} /></div>
+                <div className='img'><img src={About} /></div>
                 <div className='imgfeature'>
                     <img src={Image} />
                     <div className='text'>
@@ -31,19 +33,16 @@ function Features() {
                         </div>
                     </div>
                 </div>
-                <div className='side'>
-                    <p><a href='/Support'>24/7 Support</a></p>
-                    <p><a href='/CustomizeYourOwn'>Customize Your Own</a></p>
-                    <p><a href='/CloudBased'>Cloud Based</a></p>
+                <div className='logo'>
+                    <img src={Logo} />
                 </div>
-
+                
                 <div className='bottomimg'>
                     <img src={Bottom} />
                 </div>
-
             </div>
         </div>
     )
 }
 
-export default Features
+export default AboutUs
