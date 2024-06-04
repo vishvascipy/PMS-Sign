@@ -72,7 +72,7 @@
     top: 70%;
     left: 5px;
     transform: translateY(-50%);
-    margin-top: 20px;
+    margin-top: 140px;
 }
 
 .side p {
@@ -84,6 +84,19 @@
 .side a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+.logo img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+    margin-top: 135px;
+    gap: 0px;
+    opacity: 0px;
+    width: 800px;
+    height: 100px;
+    background-color: red;
 }
 
 @media screen and (max-width: 800px) {
@@ -102,5 +115,9 @@
 
     .text {
         top: 80px;
+    }
+
+    .side {
+        display: none;
     }
 }

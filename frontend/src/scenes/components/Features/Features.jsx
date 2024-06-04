@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Features.css"
 import Feature from "../assests/Features 1.png"
-import Bottom from "../assests/Untitled-23 1.png"
+import Bottom from "../assests/Indhan.png"
 import Image from "../assests/Rectangle 3.png"
+import Indhanlogo from "../assests/IndhanXLogo.png"
 import { useState } from 'react'
 function Features() {
     const [fulltext, setFulltext] = useState(false)
@@ -39,6 +40,9 @@ function Features() {
 
                 <div className='bottomimg'>
                     <img src={Bottom} />
+                </div>
+                <div className='logo'>
+                    <img src={Indhanlogo}/>
                 </div>
 
             </div>

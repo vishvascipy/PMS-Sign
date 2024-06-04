@@ -3,7 +3,7 @@ import "./AboutUs.css"
 import About from "../assests/AboutUs.png"
 import Bottom from "../assests/Indhan.png"
 import Image from "../assests/AboutBack.png"
-import Logo from "../assests/IndhanLogocopy1.png"
+import Logo from "../assests/IndhanXLogo.png"
 import { useState } from 'react'
 
 function AboutUs() {

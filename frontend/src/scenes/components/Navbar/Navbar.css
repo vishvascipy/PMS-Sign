@@ -96,13 +96,12 @@ body {
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
 
     .topnav .list {
         text-align: center;
         height: auto;
-        width: 50rem;
         margin: 10px 0;
     }
 }
