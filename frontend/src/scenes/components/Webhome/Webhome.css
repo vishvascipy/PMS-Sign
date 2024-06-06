@@ -72,10 +72,27 @@
 .indhan {
     display: flex;
     flex-direction: column;
-    margin-top: -500px;
 }
 
-@media screen and (max-width: 800px) {
+.restxt {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    width: auto;
+    margin-left: 30px;
+}
+
+.restxt button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 8px;
+    position: absolute;
+    left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
 
     .main .best {
         height: 60px;
@@ -97,7 +114,14 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin-top: -60px;
+        margin-top: -10px;
         text-align: center;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .restxt {
+        display: flex;
+        flex-direction: column;
     }
 }

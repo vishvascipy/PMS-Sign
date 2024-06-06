@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
 }
 
 .main {
@@ -11,6 +12,10 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #10A174;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .topnav a {
@@ -84,6 +89,7 @@ body {
 @media screen and (max-width: 800px) {
     .topnav.responsive {
         position: relative;
+        margin-top: -7rem;
     }
 
     .topnav.responsive .icon {
