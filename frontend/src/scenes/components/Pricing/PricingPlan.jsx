@@ -3,6 +3,7 @@ import "./PricingPlan.css"
 import Indhan from "../assests/IndhanXtext2.png"
 import Fontimg from "../assests/pricebackground.png"
 import PricePlan from "../assests/PriceandPlans.png"
+import LogoX from "../assests/IndhanXLogo.png"
 
 function PricingPlan() {
   return (
@@ -28,10 +29,14 @@ function PricingPlan() {
             <h5>5,999</h5>
             <p>Lorem Ipsum is simply dummy text of the printing</p>
           </div>
+          <div className='logoX'>
+            <img src={LogoX} />
+          </div>
         </div>
         <div className='fontprice'>
-          <img src={PricePlan}/>
+          <img src={PricePlan} />
         </div>
+        <div className='bordercolor'></div>
       </div>
     </div>
   )

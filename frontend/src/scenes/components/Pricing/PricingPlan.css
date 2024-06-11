@@ -47,8 +47,8 @@
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
+    width: 0;
+    height: 0;
 }
 
 .box1 {
@@ -121,11 +121,33 @@
     top: 150px;
 }
 
-.fontprice{
+.fontprice {
     display: flex;
     flex-direction: column;
-    background-color: red;
 }
+
+.logoX {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left: 70%;
+    top: 10%;
+    width: 750px;
+    transform: translate(-50%, 0%);
+}
+
+.logoX img {
+    width: 100%;
+    height: 100%;
+}
+
+.bordercolor {
+    width: auto;
+    height: 100px;
+    background: rgba(14, 152, 110, 1);
+}
+
 
 @media screen and (min-width:300px) and (max-width:600px) {
 
@@ -182,6 +204,18 @@
         top: 80px;
         font-size: 12px;
     }
+
+    .logoX {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        top: 66%;
+        left: 50%;
+    }
+
+    .bordercolor {
+        display: none;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:768px) {
@@ -191,8 +225,30 @@
     }
 
     .textprice {
-        top: 250px;
+        top: 230px;
         left: 20px;
+    }
+
+    .box1 {
+        position: absolute;
+        top: 300px;
+    }
+
+    .box2 {
+        position: absolute;
+        top: 300px;
+    }
+
+    .logoX {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        top: 59%;
+        left: 50%;
+    }
+
+    .bordercolor {
+        display: none;
     }
 }
 
@@ -206,6 +262,18 @@
         top: 250px;
         left: 20px;
     }
+
+    .logoX {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        top: 54%;
+        left: 50%;
+    }
+
+    .bordercolor {
+        display: none;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -217,6 +285,17 @@
     .textprice {
         top: 280px;
         left: 20px;
+    }
+
+    .logoX {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        top: 200px;
+    }
+
+    .bordercolor {
+        display: none;
     }
 }
 
