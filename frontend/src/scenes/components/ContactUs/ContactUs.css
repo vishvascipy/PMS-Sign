@@ -1,15 +1,16 @@
 .contactmain {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, #10A174, #003828);
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .contactback {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 150vh;
+    height: 170vh;
     background: rgba(0, 57, 41, 1);
     position: relative;
 }
@@ -18,48 +19,155 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    height: 100vh;
-    top: 60px;
-    left: 60px;
+    z-index: 0;
+    width: auto;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
+.contacttext {
+    position: absolute;
+    z-index: 1;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.contactmain .button button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.contactlogo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+    left: 70%;
+    top: 10%;
+    width: 750px;
+    transform: translate(-50%, 0%);
+}
+
+.contactlogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactcolor {
+    width: auto;
+    height: 100px;
+    background: rgba(14, 152, 110, 1);
+}
+
+.contacttext p {
+    position: relative;
+    z-index: 1;
+}
+
+.contactcolor {
+    width: auto;
+    height: 100px;
+    background: rgba(14, 152, 110, 1);
+}
+
+
+
 @media screen and (min-width:300px) and (max-width: 600px) {
+    .contactbackgorund {
+        width: 100%;
+        height: 200vh;
+    }
+
     .contactimg img {
         display: flex;
         flex-direction: column;
-        height: 400px;
-        width: 500px;
-        margin-top: 90px;
+        width: auto;
+        height: 650px;
     }
 
-    .contactimg {
-        margin-top: 0px;
-        left: 30px;
-        width: 250px;
+    .contactmain .button button {
+        display: none;
+    }
+
+    .contactlogo {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        top: 75.8%;
+        left: 50%;
     }
 }
 
 @media screen and (min-width:600px) and (max-width:768px) {
-    .contactimg {
-        width: 1000px;
+    .contactimg img {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 600px;
+    }
+
+    .contactmain .button button {
+        display: none;
+    }
+
+    .contactlogo {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        top: 67.8%;
+        left: 50%;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
-    .contactimg {
-        width: 1000px;
+    .contactimg img {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 600px;
+    }
+
+    .contactlogo {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        top: 59.7%;
+        left: 50%;
     }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
-    .contactimg {
-        width: 1000px;
+    .contactimg img {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 600px;
+    }
+
+    .contactlogo {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        top: 200px;
     }
 }
 
 @media (min-width: 1200px) {
-    .contactimg {
-        width: 1200px;
+    .contactimg img {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 700px;
     }
 }

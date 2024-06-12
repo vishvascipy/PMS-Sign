@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Webhome.css"
 import Xbig from "../assests/IndhanLogoScribble.png"
 import Logo from "../assests/IndhanXtext2.png"
@@ -6,6 +6,28 @@ import Logo from "../assests/IndhanXtext2.png"
 
 function Webhome() {
   const [text, setText] = useState(false)
+  const [windowWidth, setWindowWidth] = useState()
+
+  // to read current width
+  const updateWidth = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth)
+
+    //clean up
+    return () => window.removeEventListener('resize', updateWidth)
+  }, [])
+
+  useEffect(() => {
+    if (windowWidth < 800) {
+      setText(true)
+    }
+    else {
+      setText(false)
+    }
+  }, [windowWidth])
 
   const toggletext = () => {
     setText(!text)

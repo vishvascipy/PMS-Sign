@@ -4,9 +4,31 @@ import Feature from "../assests/Features 1.png"
 import Bottom from "../assests/Indhan.png"
 import Image from "../assests/Rectangle 3.png"
 import Indhanlogo from "../assests/IndhanXLogo.png"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 function Features() {
     const [fulltext, setFulltext] = useState(false)
+    const [windowWidth, setWindowWidth] = useState()
+
+    // to read current width
+    const updateWidth = () => {
+        setWindowWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateWidth)
+
+        //clean up
+        return () => window.removeEventListener('resize', updateWidth)
+    }, [])
+
+    useEffect(() => {
+        if (windowWidth < 800) {
+            setFulltext(true)
+        }
+        else {
+            setFulltext(false)
+        }
+    }, [windowWidth])
 
     const toggletext = () => {
         setFulltext(!fulltext)

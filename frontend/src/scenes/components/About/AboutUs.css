@@ -38,6 +38,7 @@
     height: 100vh;
     margin-top: -70px;
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 .textabout {
@@ -108,6 +109,10 @@
     .logoabout img {
         width: 300px;
     }
+
+    .aboutmain .button button {
+        display: none;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:768px) {
@@ -115,22 +120,44 @@
         width: 400px;
     }
 
+    .imgabout img {
+        height: 550px;
+    }
+
+    .aboutmain .button button {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
     .logoabout img {
         width: 450px;
+        height: 100vh;
+    }
+
+    .imgabout img {
+        height: 550px;
     }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
     .logoabout img {
         width: 500px;
+        height: 100vh;
+    }
+
+    .imgabout img {
+        height: 550px;
     }
 }
 
 @media (min-width: 1200px) {
     .logoabout img {
         width: 700px;
+    }
+
+    .imgabout img {
+        height: 550px;
     }
 }
