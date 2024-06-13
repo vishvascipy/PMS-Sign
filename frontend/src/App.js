@@ -11,6 +11,9 @@ import ContactUs from "./scenes/components/ContactUs/ContactUs";
 import Features from "./scenes/components/Features/Features";
 import AboutUs from "./scenes/components/About/AboutUs"
 import PricingPlan from "./scenes/components/Pricing/PricingPlan";
+import CloudBased from "./scenes/components/Cloud/CloudBased";
+import CustomizeOwn from "./scenes/components/Customize/CustomizeOwn";
+import SupportSystem from "./scenes/components/Support/SupportSystem";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="/ContactUs" element={<WithNavbar><ContactUs /></WithNavbar>} />
           <Route path="/AboutUs" element={<WithNavbar><AboutUs /></WithNavbar>} />
           <Route path="/Pricing" element={<WithNavbar><PricingPlan /></WithNavbar>} />
+          <Route path="/CloudBased" element={<WithNavbar><CloudBased /></WithNavbar>} />
+          <Route path="/CustomizeYourOwn" element={<WithNavbar><CustomizeOwn /></WithNavbar>} />
+          <Route path="/Support" element={<WithNavbar><SupportSystem /></WithNavbar>} />
         </Routes>
       </BrowserRouter>
 
